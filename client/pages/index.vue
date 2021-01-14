@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h2 class="subtitle">
-        MEVN starter template based on Nuxt-js
+        MEVN starter template based on Nuxt-js 2
       </h2>
       <div class="links">
         <a

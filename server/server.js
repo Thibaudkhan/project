@@ -1,5 +1,5 @@
 // Importing required modules
-const cors = require('cors');
+/*const cors = require('cors');
 const express = require('express');
 
 // parse env variables
@@ -27,3 +27,17 @@ app.listen(port);
 console.log(`Listening On http://localhost:${port}/api`);
 
 module.exports = app;
+
+*/
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 9000;
+const apiRouter = require('./routes')
+
+app.use(express.json());
+app.use('/api/db',apiRouter)
+app.listen(port,()=>{
+    console.log("server running "+port)
+
+});
+ 
